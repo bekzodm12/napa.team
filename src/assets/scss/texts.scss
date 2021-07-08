@@ -1,0 +1,52 @@
+%text {
+  font: {
+    family: $main-font, sans-serif;
+    weight: normal;
+    size: 16px;
+  }
+  color: $main-color;
+
+  @media all and (max-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+* {
+  @extend %text;
+}
+
+p {
+  @extend %text;
+  line-height: 150%;
+}
+
+li {
+  line-height: 150%;
+}
+
+b {
+  @extend %text;
+  font: {
+    weight: 600;
+  }
+}
+
+h2 {
+  @extend %text;
+
+  font: {
+    weight: 500;
+    size: 30px;
+  }
+
+  @media all and (max-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
+.content-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  display: inline-flex;
+  position: relative;
+}
