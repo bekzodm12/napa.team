@@ -79,10 +79,10 @@
               Адрес: <span itemprop="streetAddress">4 University street</span>, <span itemprop="addressLocality">Tashkent</span> <span itemprop="postalCode">100194</span>, <span itemprop="addressCountry">Узбекистан</span>
             </p>
             <p>
-              Телефон: <a href="tel:998712000610">+998 71 200-0610</a>
+              Телефон: <a href="tel:998712000610" itemprop="telephone">+998 71 200-0610</a>
             </p>
             <p>
-              Почта: <a href="mailto:info@napa.uz">info@napa.uz</a>
+              Почта: <a href="mailto:info@napa.uz" itemprop="email">info@napa.uz</a>
             </p>
           </div>
         </div>
