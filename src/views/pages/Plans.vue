@@ -43,7 +43,14 @@
 
 <script>
 export default {
-
+  metaInfo: {
+    title: 'Plans',
+    titleTemplate: '%s - Napa.team',
+    meta: [
+          { name: 'description', content: 'Планы по масштабированию на 2021 и 2022 гг.' },
+          { name: 'keywords', content: 'Планы НАПА, планы NAPA, масштабирование, строительстко технопарка, автоматизация процессов'}
+      ],
+  }
 }
 </script>
 

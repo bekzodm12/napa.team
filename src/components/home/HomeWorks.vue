@@ -5,9 +5,9 @@
       <h2 class="content-title">Чем мы занимаемся</h2>
     </div>
 
-    <div class="section__wrapper home-works__wrapper">
-      <div class="home-works__menu">
-        <ul>
+    <div class="section__wrapper home-works__wrapper" itemscope itemtype="https://schema.org/OfferCatalog">
+      <div class="home-works__menu" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
+        <ul itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
           <li
             v-for="({ title }, i) in splitedWorks[0]"
             :key="title"
@@ -16,8 +16,11 @@
             :class="{
               active: currentProject === i
             }"
+            itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer"
           >
-            {{ title }}
+              <div itemprop="itemOffered" itemscope itemtype="https://schema.org/Service">
+                <span itemprop="name">{{ title }}</span>
+              </div>
 
             <div class="home-works__menu-item-arrow">
               <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,37 +30,37 @@
           </li>
         </ul>
       </div>
-      <div class="home-works__content">
-        <div class="home-works__content-text">
+      <div class="home-works__content" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">
+        <div class="home-works__content-text" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
           <template v-if="currentProject === 0">
             <div>
               <p>Обучаем по направлениям :</p>
               <ul>
-                <li>- Программирование</li>
-                <li>- HR-менеджемент</li>
-                <li>- Digital-маркетинг</li>
-                <li>- Project management</li>
+                <li itemprop="itemOffered">- Программирование</li>
+                <li itemprop="itemOffered">- HR-менеджемент</li>
+                <li itemprop="itemOffered">- Digital-маркетинг</li>
+                <li itemprop="itemOffered">- Project management</li>
               </ul>
-              <p>А также переподготовка и повышение квалификации по системе корпоративного обучения.</p>  
+              <p itemprop="itemOffered">А также переподготовка и повышение квалификации по системе корпоративного обучения.</p>  
             </div>
           </template>
           <template v-if="currentProject === 1">
-            <div>
-              <p>Внедрение в компании методологий и технологий управления для увеличения эффективности работы сотрудников и предприятия в целом.</p>
-              <ul>
-                <li>
+            <div itemprop="itemOffered" itemscope itemtype="https://schema.org/OfferCatalog">
+              <p itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">Внедрение в компании методологий и технологий управления для увеличения эффективности работы сотрудников и предприятия в целом.</p>
+              <ul itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <li itemprop="itemOffered">
                   ERP - Програма для управления бизнес-процессами
                 </li>
-                <li>
+                <li itemprop="itemOffered">
                   EMK - Единая медицинская карта
                 </li>
-                <li>
+                <li itemprop="itemOffered">
                   DLP - Система для предотвращения утечек
                 </li>
-                <li>
+                <li itemprop="itemOffered">
                   CЭД - Система для электронного документооборота
                 </li>
-                <li>
+                <li itemprop="itemOffered">
                   LMS - Хранилище учебных материалов
                 </li>
               </ul>
@@ -65,42 +68,45 @@
             <a @click="setActiveModal" title="Подробнее">Подробнее</a>   
           </template>
           <template v-if="currentProject === 2">
-            <div>
-              <p>Широкий набор услуг и полный цикл реализации цифровых бизнес-проектов.</p>
-              <ul>
-                <li>IT‐аутсорсинг, IT‐услуги</li>
-                <li>Торговые площадки</li>
-                <li>Онлайн услуги</li>
-                <li>Интернет магазины</li>
-                <li>Информационная безопасность</li>
-                <li>Полный цикл работы с Программными обеспечениями</li>
+            <div itemprop="itemOffered" itemscope itemtype="https://schema.org/OfferCatalog">
+              <p itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">Широкий набор услуг и полный цикл реализации цифровых бизнес-проектов.</p>
+              <ul itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <li itemprop="itemOffered">IT‐аутсорсинг, IT‐услуги</li>
+                <li itemprop="itemOffered">Торговые площадки</li>
+                <li itemprop="itemOffered">Онлайн услуги</li>
+                <li itemprop="itemOffered">Интернет магазины</li>
+                <li itemprop="itemOffered">Информационная безопасность</li>
+                <li itemprop="itemOffered">Полный цикл работы с Программными обеспечениями</li>
               </ul>  
             </div>
 
             <a @click="setActiveModal" title="Подробнее">Подробнее</a>
           </template>
           <template v-if="currentProject === 3">
-            <div>
-              <p>База для помощи в реализации инновационных проектов.</p>
-              <ul>
-                <li>- Стартап-акселераторы</li>
-                <li>- Бизнес-инкубаторы</li>
+            <div itemprop="itemOffered" itemscope itemtype="https://schema.org/OfferCatalog">
+              <p itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog">База для помощи в реализации инновационных проектов.</p>
+              <ul itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
+                <li itemprop="itemOffered">- Стартап-акселераторы</li>
+                <li itemprop="itemOffered">- Бизнес-инкубаторы</li>
               </ul>  
               <a title="Подробнее" href="https://dc.napa.uz">Подробнее</a>   
             </div>            
           </template>
           <template v-if="currentProject === 4">
-            <p>Предоставлении помощи между инвесторами <br />и предпринимателями.</p>
-            <ul>
-              <li>Инвестиционные Фонды</li>
-              <li>Венчурные фонды</li>
-              <li>Клуб Бизнес Ангелов</li>
-              <li>Союзы</li>
-              <li>Банки</li>
-              <li>Социальные Фонды</li>
-              <li>Робототехника</li>
-              <li> - разработка автоматизированных технических систем</li>
-            </ul>
+            <div>
+              <p>Предоставлении помощи между инвесторами <br />и предпринимателями.</p>
+              <ul>
+                <li>Инвестиционные Фонды</li>
+                <li>Венчурные фонды</li>
+                <li>Клуб Бизнес Ангелов</li>
+                <li>Союзы</li>
+                <li>Банки</li>
+                <li>Социальные Фонды</li>
+                <li>Робототехника</li>
+                <li> - разработка автоматизированных технических систем</li>
+              </ul>
+            </div>
+            
           </template>
         </div>
       </div>

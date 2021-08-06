@@ -16,29 +16,29 @@
               'header-nav__list-item--dropdown': links !== undefined
             }"
           >
-            <a v-if="$route.name === 'Home'" :href="url" class="header-nav__list-link" v-smooth-scroll>
-              {{ title }}
-            </a>
-            <a v-else :href="'/' + url" class="header-nav__list-link">
-              {{ title }}
-            </a>
-            <span
-              v-if="links != undefined"
-              class="header-nav__list-item-decoration"
-            >
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 5.65674L6.65685 11.3136L12.3137 5.65674" stroke="white"/>
-              </svg>
-            </span>
-            <ul v-if="links" class="header-nav__sublist">
-              <li
-                v-for="{ title, url } in links"
-                :key="title"
-                class="header-nav__sublist-item"
-              >
-                <a :href="url" class="header-nav__sublist-link">
+                <a v-if="$route.name === 'Home'" :href="url" class="header-nav__list-link" v-smooth-scroll>
                   {{ title }}
                 </a>
+                <a v-else :href="'/' + url" class="header-nav__list-link">
+                  {{ title }}
+                </a>
+                <span
+                  v-if="links != undefined"
+                  class="header-nav__list-item-decoration"
+                >
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 5.65674L6.65685 11.3136L12.3137 5.65674" stroke="white"/>
+                  </svg>
+                </span>
+                <ul v-if="links" class="header-nav__sublist">
+                  <li
+                    v-for="{ title, url } in links"
+                    :key="title"
+                    class="header-nav__sublist-item"
+                  >
+                    <a :href="url" class="header-nav__sublist-link">
+                      {{ title }}
+                    </a>
               </li>
             </ul>
           </li>

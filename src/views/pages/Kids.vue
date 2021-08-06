@@ -110,7 +110,14 @@
 
 <script>
 export default {
-
+metaInfo: {
+  title: 'NAPA Kids',
+  titleTemplate: '%s - Napa.team',
+  meta: [
+          { name: 'description', content: 'Обучение детей программированию, 6 месяцев, теория и практика, от 6 до 15 лет' },
+          { name: 'keywords', content: 'Детский технопарк, обучение детей, информационные технологии, '}
+      ], 
+},
 }
 </script>
 

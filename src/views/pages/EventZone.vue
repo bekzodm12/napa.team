@@ -47,6 +47,15 @@
 <script>
 import HomeContacts from '../../components/home/HomeContacts'
 export default {
+  metaInfo: {
+    title: 'Event zone',
+    titleTemplate: '%s - Napa.team',
+    meta: [
+        { name: 'description', content: 'Площадка для проведения различных мероприятий в сфере IT на 160 мест' },
+        { name: 'keywords', content: 'Ивент зона, проведения IT мероприятий, Зона технопарка'}
+      ],
+  },
+
   components: {
     HomeContacts
   }

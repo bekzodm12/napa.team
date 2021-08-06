@@ -24,6 +24,15 @@ import HomeContacts from '../../components/home/HomeContacts'
 export default {
   name: 'HomePage',
 
+  metaInfo: {
+    title: 'Добро пожаловать!',
+    titleTemplate: '%s - Napa.team',
+    meta: [
+          { name: 'description', content: 'NAPA Team главная страница' },
+        { name: 'keywords', content: 'NAPA, NAPA Team, Технопарк, IT обучение, ИТ специалисты в Ташкенте, IT для детей, создание ИТ проектов'}
+      ],
+  },
+
   components: {
     HomeMain, HomeAbout, HomeWorks, HomeFeatures, HomeProjects, HomePartners, HomeTeam, HomeContacts
   }

@@ -1,4 +1,5 @@
 import Vue from 'vue';
+//import VueMeta from 'vue-meta';
 import App from './App.vue';
 import router from './router';
 // import store from './store';
@@ -11,6 +12,7 @@ import './assets/scss/global.scss';
 Vue.config.productionTip = false;
 
 Vue.use(VueSmoothScroll)
+//Vue.use(VueMeta)
 
 new Vue({
   router,

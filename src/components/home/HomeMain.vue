@@ -14,6 +14,7 @@
           :style="{
             backgroundImage: `url(${require('../../assets/images/napa-team.jpg')})`
           }"
+          itemscope itemtype="https://schema.org/Organization"
         >
           NAPA
           <br>
@@ -49,9 +50,9 @@
         class="swiper-no-swiping home-main__slider"
       >
         <swiper-slide class="home-main__slide">
-          <div class="home-main__slide-content">
-            <h2>Технопарк NAPA</h2>
-            <p>
+          <div class="home-main__slide-content" itemscope itemtype="https://schema.org/Organization">
+            <h2 itemprop="legalName">Технопарк NAPA</h2>
+            <p itemprop="description">
               Центр IT преобразования
               <br>
               и создания успешных проектов
@@ -62,24 +63,24 @@
           </div>
         </swiper-slide>
         <swiper-slide class="home-main__slide">
-          <div class="home-main__slide-content">
-            <h2>Bobir Akilkhanov Tech academy</h2>
-            <p>
+          <div class="home-main__slide-content" itemscope itemtype="https://schema.org/Organization">
+            <h2 itemprop="legalName">Bobir Akilkhanov Tech academy</h2>
+            <p itemprop="description">
               Будущее успешного IT специалиста начинается здесь
             </p>
-            <a target="_blank" href="https://ba.uz/">
+            <a target="_blank" href="https://ba.uz/" itemprop="url">
               Перейти на сайт
             </a>
           </div>
 
         </swiper-slide>
         <swiper-slide class="home-main__slide">
-          <div class="home-main__slide-content">
-            <h2>NAPA DC</h2>
-            <p>
+          <div class="home-main__slide-content" itemscope itemtype="https://schema.org/Organization">
+            <h2 itemprop="legalName">NAPA DC</h2>
+            <p itemprop="description">
               Разработка современого и надежного програмного обеспечения
             </p>
-            <a target="_blank" href="https://dc.napa.uz/">
+            <a target="_blank" href="https://dc.napa.uz/" itemprop="url">
               Перейти на сайт
             </a>
           </div>

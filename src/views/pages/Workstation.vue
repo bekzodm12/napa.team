@@ -155,6 +155,15 @@
 <script>
 import HomeContacts from '../../components/home/HomeContacts'
 export default {
+  metaInfo: {
+    title: 'Workstation',
+    titleTemplate: '%s - Napa.team',
+    meta: [
+          { name: 'description', content: 'Аренда помещений с необходимым оборудованием в коворкинг центре NAPA, зона для работы и учебы' },
+          { name: 'keywords', content: 'Коворкинг, конференц залы, ИТ проекты, стартап коммунити, менторство'}
+      ], 
+  },
+
   components: {
     HomeContacts
   }

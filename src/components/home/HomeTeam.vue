@@ -37,41 +37,44 @@
             }
           }"
           class="home-team__slider"
+          itemscope itemtype="https://schema.org/Organization"
         >
-          <swiper-slide class="home-team__slide">
-            <div class="home-team__slide-image">
-              <img src="../../assets/images/team/bobir-alikhanov.jpg" alt="">
-            </div>
-            <div class="home-team__slide-content">
-              <h3>Бобир Аликханов</h3>
-              <span>Учредитель</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide class="home-team__slide">
-            <div class="home-team__slide-image">
-              <img src="../../assets/images/team/alisher-annazarov.jpg" alt="">
-            </div>
-            <div class="home-team__slide-content">
-              <h3>Алишер Анназаров</h3>
-              <span>Учредитель</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide class="home-team__slide">
-            <div class="home-team__slide-image">
-              <img src="../../assets/images/team/shuhrat-hasanbaev.jpg" alt="">
-            </div>
-            <div class="home-team__slide-content">
-              <h3>Шухрат Хасанбаев</h3>
-              <span>Учредитель</span>
-            </div>
-          </swiper-slide>
-          <swiper-slide class="home-team__slide">
-            <div class="home-team__slide-image">
-              <img src="../../assets/images/team/sophia-kim.jpg" alt="">
-            </div>
-            <div class="home-team__slide-content">
-              <h3>Софья Ким</h3>
-              <span>Вр.и.о. Генеральный Директор</span>
+            <meta itemprop="legalName" content="NAPA Team">
+            <meta itemprop="location" content="Uzbekistan">
+            <swiper-slide class="home-team__slide" itemprop="founder" itemscope itemtype="https://schema.org/Person">
+              <div class="home-team__slide-image">
+                <img src="../../assets/images/team/bobir-alikhanov.jpg" alt="" itemprop="image">
+              </div>
+              <div class="home-team__slide-content">
+                <h3><span itemprop="givenName">Бобир</span> <span itemprop="familyName">Акилханов</span></h3>
+                <span>Учредитель</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="home-team__slide" itemprop="founder" itemscope itemtype="https://schema.org/Person">
+              <div class="home-team__slide-image">
+                <img src="../../assets/images/team/alisher-annazarov.jpg" alt="" itemprop="image">
+              </div>
+              <div class="home-team__slide-content">
+                <h3><span itemprop="givenName">Алишер</span> <span itemprop="familyName">Анназаров</span></h3>
+                <span>Учредитель</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="home-team__slide" itemprop="founder" itemscope itemtype="https://schema.org/Person">
+              <div class="home-team__slide-image">
+                <img src="../../assets/images/team/shuhrat-hasanbaev.jpg" alt="" itemprop="image">
+              </div>
+              <div class="home-team__slide-content">
+                <h3><span itemprop="givenName">Шухрат</span> <span itemprop="familyName">Хасанбаев</span></h3>
+                <span>Учредитель</span>
+              </div>
+            </swiper-slide>
+            <swiper-slide class="home-team__slide" itemprop="member" itemscope itemtype="https://schema.org/Person">
+              <div class="home-team__slide-image">
+                <img src="../../assets/images/team/sophia-kim.jpg" alt="" itemprop="image">
+              </div>
+              <div class="home-team__slide-content">
+                <h3><span itemprop="givenName">Софья</span> <span itemprop="familyName">Ким</span></h3>
+                <span>Вр.и.о. Генеральный Директор</span>
             </div>
           </swiper-slide>
         </swiper>

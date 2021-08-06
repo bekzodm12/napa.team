@@ -50,7 +50,9 @@
         <div v-else class="home-contacts__block home-contacts__block-submit">
           <h3>Спасибо! Ваша заявка принята!</h3>
         </div>
-        <div class="home-contacts__block home-contacts__block--map">
+        <div class="home-contacts__block home-contacts__block--map"
+              itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="legalName" content="NAPA Team">
           <div
             @click="openMap"
             class="home-contacts__map"
@@ -72,15 +74,17 @@
                       aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
-          <p>
-            Адрес: 4 University street, Tashkent 100194, Узбекистан
-          </p>
-          <p>
-            Телефон: <a href="tel:998712000610">+998 71 200-0610</a>
-          </p>
-          <p>
-            Почта: <a href="mailto:info@napa.uz">info@napa.uz</a>
-          </p>
+          <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <p>
+              Адрес: <span itemprop="streetAddress">4 University street</span>, <span itemprop="addressLocality">Tashkent</span> <span itemprop="postalCode">100194</span>, <span itemprop="addressCountry">Узбекистан</span>
+            </p>
+            <p>
+              Телефон: <a href="tel:998712000610">+998 71 200-0610</a>
+            </p>
+            <p>
+              Почта: <a href="mailto:info@napa.uz">info@napa.uz</a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
